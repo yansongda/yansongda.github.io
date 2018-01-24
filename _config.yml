@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://yansongda.cn
+url: https://yansongda.github.io
 date_format: "ordinal"
 title: 闫嵩达
 subtitle: "Coding My Life..."
@@ -16,7 +16,7 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: yansongda
-organization: yansongda.cn
+organization: Web Developer
 organization_url: http://yansongda.cn
 github_username: yansongda
 location: Guangdong, China

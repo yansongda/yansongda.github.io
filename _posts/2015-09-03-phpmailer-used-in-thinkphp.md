@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 最新 phpmailer 的使用与和 thinkphp 的整合
-categories: [thinkphp]
+categories: [thinkphp, php]
 description: 最新 phpmailer 的使用与和 thinkphp 的整合
 keywords: phpmailer, thinkphp
 ---

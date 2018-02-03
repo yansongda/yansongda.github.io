@@ -1,7 +1,7 @@
 ---
 layout: post
 title: thinkphp3.2 中AUTH类关于session前缀、登录验证、认证配置项问题的分析与修复
-categories: [thinkphp]
+categories: [thinkphp, php]
 description: thinkphp3.2 中AUTH类关于session前缀、登录验证、认证配置项问题的分析与修复
 keywords: thinkphp, session
 ---

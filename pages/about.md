@@ -19,7 +19,7 @@ permalink: /about/
 ## 联系方式
 
 {% for website in site.data.social %}
-* {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
+* {{ website.sitename }}：[{{ website.name }}]({{ website.url }})
 {% endfor %}
 
 ## 教育经历

@@ -1,10 +1,18 @@
+- sitename: 手机
+  name: "185 6672 2456"
+  url: tel://18566722456
+
+- sitename: 邮箱
+  name: me@yansongda.cn
+  url: http://yansongda.cn
+
 - sitename: GitHub
   name: yansongda
   url: https://github.com/yansongda
 
 - sitename: 博客
   name: 闫嵩达
-  url: http://me@yansongda.cn
+  url: http://yansongda.cn
 
 - sitename: 微博
   name: yansongda

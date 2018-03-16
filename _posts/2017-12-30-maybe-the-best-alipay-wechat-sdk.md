@@ -6,6 +6,8 @@ description: 可能是我用过的最优雅的 Alipay 和 WeChat 的支付 SDK �
 keywords: alipay, wechat, php, sdk
 ---
 
+开发了多次支付宝与微信支付后，很自然产生一种反感，惰性又来了，想在网上找相关的轮子，可是一直没有找到一款自己觉得逞心如意的，要么使用起来太难理解，要么文件结构太杂乱，只有自己撸起袖子干了。
+
 <p align="center">
 <a href="https://styleci.io/repos/100355112"><img src="https://styleci.io/repos/100355112/shield?branch=master" alt="StyleCI"></a>
 <a href="https://scrutinizer-ci.com/g/yansongda/pay/?branch=master"><img src="https://scrutinizer-ci.com/g/yansongda/pay/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
@@ -19,9 +21,6 @@ keywords: alipay, wechat, php, sdk
 该文档为 v2.x 版本，如果您想找 v1.x 版本文档，请点击[https://github.com/yansongda/pay/tree/v1.x](https://github.com/yansongda/pay/tree/v1.x)
 
 **注意：v1.x 与 v2.x 版本不兼容**
-
-
-开发了多次支付宝与微信支付后，很自然产生一种反感，惰性又来了，想在网上找相关的轮子，可是一直没有找到一款自己觉得逞心如意的，要么使用起来太难理解，要么文件结构太杂乱，只有自己撸起袖子干了。
 
 **！！请先熟悉 支付宝/微信 说明文档！！请具有基本的 debug 能力！！**
 

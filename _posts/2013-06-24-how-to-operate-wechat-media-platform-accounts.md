@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何运营微信公众账号
-categories: [wechat, thinking]
+categories: [wechat, reading]
 description: 如何运营微信公众账号
 keywords: wechat, media-platform
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 码农是如何炼成的（3）
-categories: [thinking]
+categories: [reading]
 description: 码农是如何炼成的（3）
 keywords: code
 ---

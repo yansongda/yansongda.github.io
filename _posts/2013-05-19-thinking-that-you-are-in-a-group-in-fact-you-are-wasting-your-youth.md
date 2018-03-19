@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 以为你是在合群，实际上你是在浪费青春
-categories: [thinking,]
+categories: [reading]
 description: 以为你是在合群，实际上你是在浪费青春
 keywords: youth
 ---

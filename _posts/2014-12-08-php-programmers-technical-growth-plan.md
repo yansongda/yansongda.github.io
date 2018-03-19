@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP 程序员的技术成长规划
-categories: [php, thinking]
+categories: [php, reading]
 description: PHP 程序员的技术成长规划
 keywords: php, developer, tech, growing
 ---

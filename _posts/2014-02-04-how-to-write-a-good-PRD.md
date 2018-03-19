@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何写出一份好的PRD（产品需求文档）
-categories: [wiki]
+categories: [wiki, reading]
 description: 如何写出一份好的PRD（产品需求文档）
 keywords: prd
 ---

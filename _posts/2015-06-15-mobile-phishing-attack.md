@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 移动端钓鱼攻击
-categories: [mobile, thinking]
+categories: [mobile, reading]
 description: 移动端钓鱼攻击
 keywords: attack, mobile, compile
 ---

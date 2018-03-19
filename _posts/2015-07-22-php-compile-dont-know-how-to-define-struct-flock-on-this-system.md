@@ -1,7 +1,7 @@
 ---
 layout: post
 title: php编译 Don’t know how to define struct flock on this system 解决办法
-categories: [centos, php]
+categories: [centos, php, linux]
 description: php编译 Don’t know how to define struct flock on this system 解决办法
 keywords: centos, php, compile
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Centos 7 搭建 L2TP VPN 服务器（firewalld 方案）
-categories: [centos, vpn]
+categories: [centos, vpn, linux]
 description: centos 搭建 L2TP VPN 服务器 firewalld 方案
 keywords: centos, vpn， l2tp, firewalld
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 码农是如何炼成的（6）
-categories: [cate1, cate2]
-description: some word here
-keywords: keyword1, keyword2
+categories: [thinking]
+description: 码农是如何炼成的（6）
+keywords: code
 ---
 
 这一章开始说编码的事，我是一个完美主义者，对代码有一定程度上的洁癖，所以大家可以看到我写的教程非常的整齐。

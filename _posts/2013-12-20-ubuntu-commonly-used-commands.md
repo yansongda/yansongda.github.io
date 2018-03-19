@@ -11,53 +11,69 @@ keywords: linux, ubuntu, command
 ## 软件
 
 查看软件xxx安装内容
+
 `dpkg -L xxx`
 
 查找软件
+
 `apt-cache search 正则表达式`
 
 查找文件属于哪个包
+
 `dpkg -S filename apt-file search filename`
 
 查询软件xxx依赖哪些包
+
 `apt-cache depends xxx`
 
 查询软件xxx被哪些包依赖
+
 `apt-cache rdepends xxx`
 
 增加一个光盘源
+
 `sudo apt-cdrom add`
 
 系统升级
+
 `sudo apt-get update`
 `sudo apt-get upgrade`
 `sudo apt-get dist-upgrade`
 
 清除所以删除包的残余配置文件
+
 `dpkg -l |grep ^rc|awk ‘{print $2}’ |tr [””n”] [” “]|sudo xargs dpkg -P –`
 
 编译时缺少h文件的自动处理
+
 `sudo auto-apt run ./configure`
 
 查看安装软件时下载包的临时存放目录
+
 `ls /var/cache/apt/archives`
 
 备份当前系统安装的所有包的列表
+
 `dpkg –get-selections | grep -v deinstall > ~/somefile`
 
 从上面备份的安装包的列表文件恢复所有包
+
 `dpkg –set-selections < ~/somefile sudo dselect`
 
 清理旧版本的软件缓存
+
 `sudo apt-get autoclean`
 
 清理所有软件缓存
+
 `sudo apt-get clean`
 
 删除系统不再使用的孤立软件
+
 `sudo apt-get autoremove`
 
 查看包在服务器上面的地址
+
 `apt-get -qq –print-uris install ssh | cut -d”’ -f2`
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 容易混淆的四个php函数 strstr strrchr substr stristr
-categories: [php, wiki, Thinking]
+categories: [php, wiki, thinking]
 description: 容易混淆的四个php函数 strstr strrchr substr stristr
 keywords: strstr, strrchr, substr, stristr
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 清华学姐对大学生的提醒
-categories: [reading]
+categories: [reading, college]
 description: 清华学姐对大学生的提醒
 keywords: college
 ---

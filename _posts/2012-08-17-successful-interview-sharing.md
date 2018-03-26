@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 成功的面试心得分享
-categories: [reading]
+categories: [reading, interview]
 description: 成功的面试心得分享
 keywords: interview
 ---

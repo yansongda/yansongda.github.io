@@ -141,6 +141,19 @@ permalink: /about/
 * 目前正探索 Python 与 Go。
 
 
+## 个人作品
+
+* [yansongda/pay](https://github.com/yansongda/pay)
+
+* [yansongda/laravel-pay](https://github.com/yansongda/laravel-pay)
+
+* [yansongda/laravel-notification-wechat](https://github.com/yansongda/laravel-notification-wechat)
+
+* [yansongda/docker-compose-LNMongoP](https://github.com/yansongda/docker-compose-LNMongoP)
+
+更多开源作品请见 [https://github.com/yansongda](https://github.com/yansongda)
+
+
 ## 职业证书
 
 * 2017-11，CCNA 思科认证网络工程师，NO.430394169849FODI

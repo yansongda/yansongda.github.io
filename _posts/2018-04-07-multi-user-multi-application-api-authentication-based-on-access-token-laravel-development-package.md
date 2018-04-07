@@ -32,6 +32,8 @@ keywords: php, sdk, laravel, access_token, api
 <a href="https://packagist.org/packages/yansongda/laravel-api"><img src="https://poser.pugx.org/yansongda/laravel-api/license" alt="License"></a>
 </p>
 
+Github: [https://github.com/yansongda/laravel-api](https://github.com/yansongda/laravel-api)
+
 ## 运行环境
 
 - php >= 5.6

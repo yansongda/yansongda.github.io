@@ -189,6 +189,8 @@ permalink: /about/
 
 * 2018-01，GVP-码云最有价值开源项目，[yansongda/pay](https://gitee.com/yansongda/pay)
 
+* 2017-09，至今曾多次入选 Github Trending 榜单, [https://www.facebook.com/github.trends.p.hipertext.prepocessor/](https://www.facebook.com/github.trends.p.hipertext.prepocessor/)
+
 * 2017-08，软件著作权登记证书，2017SR481094，「基于微信的消息发送开发系统」
 
 * 2013-08，新浪 SAE 中级开发者，E10001607

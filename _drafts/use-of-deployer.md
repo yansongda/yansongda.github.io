@@ -10,9 +10,11 @@ keywords: deployer, php, 部署, 自动化
 
 好东西不敢独享，七零八碎的时间抽出来写完这篇分享。
 
+
 ## Deployer 是什么？
 
 简单来说，deployer 是一个用 PHP 写的自动化部署工具。
+
 
 ## 干什么用的？
 
@@ -30,6 +32,7 @@ keywords: deployer, php, 部署, 自动化
 * 丰富任务钩子和预置任务可灵活的组合完成各种任务，比如执行前端依赖的安装、构建等
 * ...
 
+
 ## 使用条件？
 
 * 使用 git 进行代码的版本控制
@@ -37,6 +40,7 @@ keywords: deployer, php, 部署, 自动化
 * 部署的机器有拉取代码的权限（一般通过部署秘钥进行授权的咯）
 
 是的，就只有以上3条，如果非要让我再写一条，我想说，那就是足够的耐心+细心+大胆！
+
 
 ## 怎么使用？
 
@@ -134,5 +138,26 @@ after('deploy:failed', 'deploy:unlock');
 before('deploy:symlink', 'artisan:migrate');
 
 ```
+
+大家看到 `shared_files`，`shared_dirs`，`writable_dirs` 为空可能有疑问，laravel 不是有 .env 文件是共享的，storage 文件夹是共享且可写的，cache 文件夹是可写的吗？为什么都没有配置呢？其实不是没有配置，而是 「recipes」已经帮我们配置好了！
+
+如果没接触过 deployer，建议大家在进行实际部署时，先看透[官方文档](https://deployer.org/docs)，并把项目的「recipes」看明白！
+
+同时，配置文件中有一些我们平常很少用的 ssh 命令，比如`multiplexing`，`StrictHostKeyChecking`等，建议大家也是 Google 之。
+
+### 激动人心的部署
+
+部署前请先记得 git push！
+
+```shell
+vendor/bin/dep deploy prod -vvv # 部署到正式环境
+vendor/bin/dep deploy debug -vvv # 部署到测试环境
+vendor/bin/dep deploy {{stage}} -vvv # 部署到XX环境
+```
+
+命令中的 prod/debug 这些就是你在配置文件中配置的 host 下的 stage。 -vvv 表示部署时显示详细信息，类似于 composer 的 -vvv
+
+输入命令后，一口茶的功夫，所有部署工作已经完成！
+
 
 ## 有什么坑？

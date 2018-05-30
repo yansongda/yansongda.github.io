@@ -167,7 +167,7 @@ permalink: /about/
 
 * [yansongda/pay](https://github.com/yansongda/pay)
 
-* [yansongda/laravel-pay](https://github.com/yansongda/laravel-pay)
+* [yansongda/laravel-api](https://github.com/yansongda/laravel-api)
 
 * [yansongda/laravel-notification-wechat](https://github.com/yansongda/laravel-notification-wechat)
 

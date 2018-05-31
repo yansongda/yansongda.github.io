@@ -172,6 +172,8 @@ permalink: /about/
 * [yansongda/laravel-notification-wechat](https://github.com/yansongda/laravel-notification-wechat)
 
 * [yansongda/docker-compose-LNMongoP](https://github.com/yansongda/docker-compose-LNMongoP)
+* 
+* [yansongda/aliyun-iot-device-python](https://github.com/yansongda/aliyun-iot-device-python)
 
 更多开源作品请见 [https://github.com/yansongda](https://github.com/yansongda)
 

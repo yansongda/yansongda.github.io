@@ -135,7 +135,7 @@ permalink: /about/
 
 * 日常使用 Mac 进行开发办公，使用 Docker 进行开发环境搭建，使用 Gitee 进行项目管理，使用 git 进行代码管理，有代码洁癖，所有代码符合 PSR 相关规范；
 
-* 码云 GVP 项目 [yansongda/pay](https://github.com/yansongda/pay) 扩展包的主要开发者。7个月内全球 Star 1800+，下载量 10K+
+* 码云 GVP 项目 [yansongda/pay](https://github.com/yansongda/pay) 扩展包的主要开发者。7个月内全球 Star 1.5K+，下载量 10K+
 
 * 目前正探索 Python 与 Go。
 

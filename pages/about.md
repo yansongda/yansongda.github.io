@@ -154,7 +154,7 @@ permalink: /about/
 
 * Version control: Git, Composer
 
-* Cloud: SAE, BAE, AWS, Aliyun, Weibo/Wechat Open Platform
+* Cloud: SAE, BAE, AWS, Aliyun, GCP, Weibo/Wechat Open Platform
 
 * Test: PHPUnit
 

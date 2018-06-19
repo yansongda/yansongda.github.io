@@ -122,7 +122,7 @@ permalink: /about/
   * 控制项目进度，调配项目组内各成员、公司内各部门等资源，保证项目按计划进行；
   * 同供应商沟通，以最具性价比的价格采购相应硬件；
   * 协调客户关系，保证项目验收及项目回款；
-  * 全称管理项目实施工作，对整个项目向公司及客户反馈阶段性建设成果。
+  * 全程管理项目实施工作，对整个项目向公司及客户反馈阶段性建设成果。
 
 
 ## 自我描述
@@ -152,7 +152,7 @@ permalink: /about/
 
 * Databases: MySQL, MongoDB, Redis, Memcache
 
-* Version control: Git, Composer
+* Version-Control: Git, Composer
 
 * Cloud: SAE, BAE, AWS, Aliyun, GCP, Weibo/Wechat Open Platform
 

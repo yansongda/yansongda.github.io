@@ -19,7 +19,7 @@ author: yansongda
 organization: Web Developer
 organization_url: https://yansongda.cn
 github_username: yansongda
-location: Guangdong, China
+location: Wuhan, China
 email: me@yansongda.cn
 
 # ---------------- #
@@ -38,9 +38,9 @@ navs:
         href: /open-source/
         label: 开源贡献
 
-    -
-        href: /about/
-        label: 关于
+    # -
+    #     href: /about/
+    #     label: 关于
 
 # ---------------- #
 #       RSS        #

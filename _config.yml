@@ -34,6 +34,9 @@ navs:
         href: /categories/
         label: 分类
 
+    -   href: /notes/
+        label: 笔记
+
     -
         href: /open-source/
         label: 开源贡献
@@ -89,18 +92,18 @@ disqus:
 
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: 
-    repo: 
+    owner:
+    repo:
     oauth:
-        client_id: 
-        client_secret: 
+        client_id:
+        client_secret:
 
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: 
-    repo: 
-    clientID: 
-    clientSecret: 
+    owner:
+    repo:
+    clientID:
+    clientSecret:
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 

@@ -37,6 +37,9 @@ navs:
     -   href: /notes/
         label: 笔记
 
+    -   href: /wiki/
+        label: 百科
+
     -
         href: /open-source/
         label: 开源贡献

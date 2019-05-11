@@ -11,9 +11,9 @@ permalink: /wiki/
 > 每天巩固才能让自己成为百科
 
 <ul class="listing">
-{% for note in site.notes %}
-    {% if note.title != "Note Template" %}
-    <li class="listing-item"><a href="{{ site.url }}{{ note.url }}">{{ note.title }}</a></li>
+{% for post in site.wiki %}
+    {% if post.title != "Wiki Template" %}
+    <li class="listing-item"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}
 {% endfor %}
 </ul>

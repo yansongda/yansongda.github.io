@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://yansongda.cn
+url: https://blog.yansongda.cn
 date_format: "ordinal"
 title: 闫嵩达 | yansongda
 subtitle: "Coding My Life..."

@@ -11,6 +11,29 @@ keywords: 闫嵩达, yansongda, pay, laravel-pay
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
+repository: yansongda/yansongda.github.io
+# 对 css 和 js 资源的 cdn 加速配置
+cdn:
+    jsdelivr:
+        enabled: true
+# 组件配置
+components:
+    # 分享
+    share:
+        enabled: false
+    # 不蒜子访问统计
+    busuanzi:
+        enabled: false
+        start_date: 2012-01-01
+# 压缩页面内容
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+# 文章字数统计
+word_count:
+    enabled: true
+# 代码高亮风格，支持的 theme 列表见 https://github.com/mzlogin/rouge-themes
+highlight_theme: github
 
 # ---------------- #
 #      Author      #
@@ -60,12 +83,12 @@ markdown: kramdown
 kramdown:
     input: GFM
 highlighter: rouge
-paginate: 8
+paginate: 10
 lsi: false
 quiet: false
 excerpt_separator: "\n\n"
 permalink: /:year/:month/:day/:title/
-gems:
+plugins:
     - jekyll-github-metadata
     - rouge
 #     - jekyll-html-pipeline
@@ -78,8 +101,6 @@ collections:
     wiki:
         output: true
         permalink: /wiki/:path/
-
-repository: yansongda/yansongda.github.io
 
 # ---------------- #
 #      Comments    #
@@ -111,7 +132,17 @@ gitalk:
 lazy_load_disqus : false
 
 # ---------------- #
+#      Search      #
+# ---------------- #
+simple_jekyll_search:
+    # 是否支持全文搜索
+    fulltext: false
+    # 最多显示多少条搜索结果
+    limit: 10
+
+# ---------------- #
 #    Analytics     #
 # ---------------- #
 google:
     analytics_id: UA-112980446-1
+    

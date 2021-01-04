@@ -11,9 +11,14 @@ permalink: /wiki/
 > 每天巩固才能让自己成为百科
 
 <ul class="listing">
-{% for post in site.wiki %}
-    {% if post.title != "Wiki Template" %}
-    <li class="listing-item"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}
+{% for wiki in site.wiki %}
+{% if wiki.title != "Wiki Template" and wiki.topmost == true %}
+<li class="listing-item"><a href="{{ site.url }}{{ wiki.url }}"><span class="top-most-flag">[置顶]</span>{{ wiki.title }}</a></li>
+{% endif %}
+{% endfor %}
+{% for wiki in site.wiki %}
+{% if wiki.title != "Wiki Template" and wiki.topmost != true %}
+<li class="listing-item"><a href="{{ site.url }}{{ wiki.url }}">{{ wiki.title }}<span style="font-size:12px;color:red;font-style:italic;">{%if wiki.layout == 'mindmap' %}  mindmap{% endif %}</span></a></li>
+{% endif %}
 {% endfor %}
 </ul>

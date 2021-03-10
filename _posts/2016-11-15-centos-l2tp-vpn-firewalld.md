@@ -6,7 +6,7 @@ description: centos 搭建 L2TP VPN 服务器 firewalld 方案
 keywords: centos, vpn， l2tp, firewalld
 ---
 
-最近 mac os 更新，导致 PPTP 科学上网方案不可行了。于是……
+最近 mac os 更新，导致 PPTP xxxx 方案不可行了。于是……
 
 ## 一、系统信息
 
@@ -187,4 +187,4 @@ firewall-cmd --reload
 
 ### 九、在客户端使用账号密码连接 VPN 服务
 
-至此，基于 xl2tpd 的 VPN 服务搭建完毕。请享受科学上网带来的乐趣吧。
+至此，基于 xl2tpd 的 VPN 服务搭建完毕。

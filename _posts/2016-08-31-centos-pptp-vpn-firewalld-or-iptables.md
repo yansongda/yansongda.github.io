@@ -6,7 +6,9 @@ description: Centos 7 搭建 PPTP VPN 服务器 firewalld + iptables 方案
 keywords: centos, vpn， pptp, firewalld, iptables
 ---
 
-工作原因，好长时间没写博客了。最近买了台国外的服务器，当然首先想到使用 VPN 服务好科学上网。
+工作原因，好长时间没写博客了。
+
+最近买了台国外的服务器。。此处省略原因。
 
 发个文记录下遇到的坑。
 
@@ -167,4 +169,4 @@ systemctl restart pptpd
 
 ### 九、在客户端使用账号密码连接 VPN 服务
 
-至此，基于 xl2tpd 的 VPN 服务搭建完毕。请享受科学上网带来的乐趣吧。
+至此，基于 xl2tpd 的 VPN 服务搭建完毕。

@@ -126,5 +126,12 @@
       </script>
     </div>
     {% endif %}
+    {% if site.cloudflare.token %}
+    <div style="display:none">
+      <!-- Cloudflare Web Analytics -->
+      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "{{ site.cloudflare.token }}"}'></script>
+      <!-- End Cloudflare Web Analytics -->
+    </div>
+    {% endif %}
 </body>
 </html>

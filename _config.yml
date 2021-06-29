@@ -144,5 +144,7 @@ simple_jekyll_search:
 #    Analytics     #
 # ---------------- #
 google:
-    analytics_id: UA-112980446-1
+    analytics_id: false
+cloudflare:
+    token: 72bd086848a14bda83f0497a18165495
     

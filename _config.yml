@@ -7,7 +7,7 @@ date_format: "ordinal"
 title: 闫嵩达 | yansongda
 subtitle: "Coding My Life..."
 description: "yansongda's Tech Blog"
-keywords: 闫嵩达, yansongda, pay, laravel-pay
+keywords: 闫嵩达, yansongda, pay, yansongda/pay
 timezone: Asia/Shanghai
 encoding: "utf-8"
 # 页面左下角显示的年份
@@ -81,6 +81,10 @@ navs:
     -
         href: /open-source/
         label: 开源贡献
+    
+    -
+        href: /donate/
+        label: 打赏
 
     # -
     #     href: /about/

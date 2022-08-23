@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: Nginx 请求处理流程
-categories: [cate1, cate2]
+categories: [nginx]
 description: Nginx 请求处理流程
 keywords: wiki, nginx
 ---

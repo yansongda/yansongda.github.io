@@ -38,27 +38,37 @@
   {% case site.comments_provider %}
     {% when 'disqus' %}
       {% if site.disqus and site.disqus.username %}
-        <div id="disqus_thread"></div>
-        <script>
-          var disqus_config = function () {
-            this.page.url = '{{ site.url }}{{ page.url }}';
-            this.page.identifier = '{{ page.url }}';
-            this.page.title = '{{ page.title }}';
-          };
-          (function() { /* DON'T EDIT BELOW THIS LINE */
-            var d = document, s = d.createElement('script');
+        {% assign load_disqus = true %}
+        <!-- Disqus Protection, see https://github.com/mzlogin/mzlogin.github.io/issues/2 -->
+        {% if site.disqus.username == 'mzlogin' %}
+          {% assign load_disqus = false %}
+          {% if site.url contains 'mazhuang.org' %}
+            {% assign load_disqus = true %}
+          {% endif %}
+        {% endif %}
+        {% if load_disqus %}
+          <div id="disqus_thread"></div>
+          <script>
+            var disqus_config = function () {
+              this.page.url = '{{ site.url }}{{ page.url }}';
+              this.page.identifier = '{{ page.url }}';
+              this.page.title = '{{ page.title }}';
+            };
+            (function() { /* DON'T EDIT BELOW THIS LINE */
+              var d = document, s = d.createElement('script');
 
-            s.type = 'text/javascript';
-            s.async = true;
-            var shortname = '{{ site.disqus.username }}';
+              s.type = 'text/javascript';
+              s.async = true;
+              var shortname = '{{ site.disqus.username }}';
 
-            s.src = '//' + shortname + '.disqus.com/embed.js';
+              s.src = '//' + shortname + '.disqus.com/embed.js';
 
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        {% endif %}
       {% endif %}
     {% when 'gitment' %}
         <div id="container"></div>
@@ -93,6 +103,26 @@
             perPage: 50,
         });
         gitalk.render('gitalk-container');
+        </script>
+  {% when 'utterances' %}
+        <script src="https://utteranc.es/client.js"
+                repo="{{ site.utterances.repo }}"
+                issue-term="title"
+                label="gitment"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
+  {% when 'beaudar' %}
+        <script src="https://beaudar.lipk.org/client.js"
+                repo="{{ site.beaudar.repo }}"
+                issue-term="title"
+                label="gitment"
+                theme="github-light"
+                comment-order="desc"
+                input-position="top"
+                crossorigin="anonymous"
+                async>
         </script>
   {% endcase %}
 {% endif %}

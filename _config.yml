@@ -174,8 +174,8 @@ cloudflare:
 google:
     analytics_id: UA-x
     adsense:
-        footer: true
-        sidebar: true 
+        footer: false
+        sidebar: false 
         sidebar-detail: false 
         content_header: false
         content_footer: false

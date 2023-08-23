@@ -173,15 +173,3 @@ simple_jekyll_search:
 # ---------------- #
 cloudflare:
     token: 72bd086848a14bda83f0497a18165495
-
-# ---------------- #
-#      Google      #
-# ---------------- #
-google:
-    analytics_id: UA-x
-    adsense:
-        footer: false
-        sidebar: false 
-        sidebar-detail: false 
-        content_header: false
-        content_footer: false

@@ -18,5 +18,5 @@ permalink: /donate/
 
 ## 微信、支付宝 / Wechat、Alipay
 
-<img src="{{ assets_base_url }}/assets/images/pay.jpeg" alt="pay" />
+<img src="{{ site.url }}/assets/images/pay.jpeg" alt="pay" />
 

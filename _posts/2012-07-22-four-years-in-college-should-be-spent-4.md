@@ -3,7 +3,7 @@ layout: post
 title: 大学四年应该这样度过（四）
 categories: [college, reading]
 description: 大学四年应该这样度过（四）
-keywords: college
+keywords: 大学, 怎么过
 ---
 
 ## 为人处事：培养友情，参与群体

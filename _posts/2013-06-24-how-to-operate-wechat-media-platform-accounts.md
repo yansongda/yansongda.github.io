@@ -3,7 +3,7 @@ layout: post
 title: 如何运营微信公众账号
 categories: [wechat, reading]
 description: 如何运营微信公众账号
-keywords: wechat, media-platform
+keywords: 微信公众号, 微信, 运营
 ---
 
 我说：个人觉得微信公众平台最重要的一点就是：用心！用心对待每一个订阅者！

@@ -3,7 +3,7 @@ layout: post
 title: 清华学姐对大学生的提醒
 categories: [reading, college]
 description: 清华学姐对大学生的提醒
-keywords: college
+keywords: college, 清华, 提醒
 ---
 
 > 同志们还在堕落,还在抱怨大学空虚吗?看看清华的同学在干什么吧.想当年他们也和我们在一个教室,我们怎能容忍自己落后呢?

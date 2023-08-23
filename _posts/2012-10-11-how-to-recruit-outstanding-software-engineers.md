@@ -3,7 +3,7 @@ layout: post
 title: 如何招聘到优秀的软件工程师
 categories: [reading]
 description: 如何招聘到优秀的软件工程师
-keywords: 
+keywords: 软件工程师, 招聘
 ---
 
 在科技行业快速发展的过程中，市场对优秀工程师的需求越来越旺盛，这也导致了工程师的紧缺。美国科技博客VentureBeat本周刊登了科技行业招聘者Megan Hopkins的文章，谈论了如何在这样激烈的人才大战中招聘到心仪的目标。

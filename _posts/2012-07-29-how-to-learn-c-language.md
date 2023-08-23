@@ -3,7 +3,7 @@ layout: post
 title: 怎样学好C语言
 categories: [reading]
 description: 怎样学好C语言
-keywords: c
+keywords: c, c语言
 ---
 
 > C语言其实说难不难，说不难也难。就拿 我来说，高中时，看了几本书，大一在图书馆借了几本真题，二级就过了。虽然不能 说是高手，但很多编程问题还是能够独立解决的。但，同时，语言是一门很深奥的东东，它会给你意想不到的“惊喜”。

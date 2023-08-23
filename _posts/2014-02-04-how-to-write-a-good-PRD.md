@@ -3,7 +3,7 @@ layout: post
 title: 如何写出一份好的PRD（产品需求文档）
 categories: [wiki, reading]
 description: 如何写出一份好的PRD（产品需求文档）
-keywords: prd
+keywords: prd, 需求文档
 ---
 
 PRD（Product Requirement Document，产品需求文档），顾名思义是阐述产品需求的一种文档，其核心是将需求描述清楚。

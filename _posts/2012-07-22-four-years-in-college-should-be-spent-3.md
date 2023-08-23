@@ -3,7 +3,7 @@ layout: post
 title: 大学四年应该这样度过（三）
 categories: [college, reading]
 description: 大学四年应该这样度过（三）
-keywords: college
+keywords: 大学, 怎么过
 ---
 
 ## 培养兴趣：开拓视野，立定志向

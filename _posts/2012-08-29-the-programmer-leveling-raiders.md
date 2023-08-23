@@ -3,7 +3,7 @@ layout: post
 title: 程序员练级攻略
 categories: [reading]
 description: 程序员练级攻略
-keywords: programer
+keywords: programer, 程序员
 ---
 
 > 很想有一篇指导性的文章，今天终于看到了。如果你对计算机感兴趣，请看看吧。将你升级！这是一篇很好的文章。

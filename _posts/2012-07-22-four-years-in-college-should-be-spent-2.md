@@ -3,7 +3,7 @@ layout: post
 title: 大学四年应该这样度过（二）
 categories: [college, reading]
 description: 大学四年应该这样度过（二）
-keywords: college
+keywords: 大学, 怎么过
 ---
 
 ## 自修之道：从举一反三到无师自通

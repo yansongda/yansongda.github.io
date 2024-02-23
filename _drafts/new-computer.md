@@ -34,6 +34,8 @@ keywords:
 
 ### Terminal
 
+选择自带 Pro 的 profile 为默认，并更改字体为 `Source Code Pro, 14`，同时放大 terminal 到合适的大小
+
 #### Brew
 
 ```shell
@@ -78,7 +80,7 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 
 ### Git
 
-从家庭网盘里下载以下文件，并放到桌面：
+从家庭存储里下载以下文件，并放到桌面：
 
 - gitconfig
 - gitignore_global
@@ -92,7 +94,7 @@ mv ~/Desktop/gitignore_global ~/.gitignore_global
 
 ### SSH
 
-从家庭网盘里下载以下文件，并放到桌面：
+从家庭存储里下载以下文件，并放到桌面：
 
 - config
 - id_rsa
@@ -101,6 +103,8 @@ mv ~/Desktop/gitignore_global ~/.gitignore_global
 - work_rsa.pub
 - private.gpg.asc
 - public.gpg.asc
+
+执行以下命令：
 
 ```shell
 mv ~/Desktop/config ~/.ssh/
@@ -115,30 +119,78 @@ mv ~/Desktop/public.gpg.asc ~/.ssh/
 ## 通讯软件
 
 ### 钉钉
+
+[https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/](https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/)
+
 ### 飞书
+
+[https://www.feishu.cn/download](https://www.feishu.cn/download)
+
 ### 企业微信
+
+[https://work.weixin.qq.com/#indexDownload](https://work.weixin.qq.com/#indexDownload)
+
 ### 微信
+
+[https://weixin.qq.com/](https://weixin.qq.com/)
+
 ### 腾讯会议
+
+[https://meeting.tencent.com/download/](https://meeting.tencent.com/download/)
 
 ## 开发工具
 
-### PHPStorm
-### RustRover
-### DataGrip
+### Jetbrains
+
+[下载 ToolBox](https://www.jetbrains.com/toolbox-app/) 并登录帐号，随后下载：
+
+- PHPStorm
+- RustRover
+- DataGrip
+- ...
+
+下载完毕后打开，并登录帐号同步设置
+
 ### VSCode
+
+[下载](https://code.visualstudio.com/) 后登录 Microsoft 帐号同步设置
+
 ### TinyRDM
+
+[https://github.com/tiny-craft/tiny-rdm](https://github.com/tiny-craft/tiny-rdm)
+
 ### Docker
+
+[https://docs.docker.com/desktop/install/mac-install/](https://docs.docker.com/desktop/install/mac-install/)
+
 ### Wireshark
+
+[https://www.wireshark.org/download.html](https://www.wireshark.org/download.html)
+
 ### Filezilla
-### GIMP
+
+[https://filezilla-project.org/download.php?type=client](https://filezilla-project.org/download.php?type=client)
+
 ### TunnelBlick
+
+[https://tunnelblick.net/downloads.html](https://tunnelblick.net/downloads.html)
 
 ## 知识管理
 
 ### Obsidian
+
+[https://obsidian.md/](https://obsidian.md/)
+
 ### WPS
+
+[https://platform.wps.cn/](https://platform.wps.cn/)
 
 ## 娱乐
 
 ### 网易云音乐
+
+[https://music.163.com/](https://music.163.com/)
+
 ### IINA
+
+[https://iina.io/](https://iina.io/)

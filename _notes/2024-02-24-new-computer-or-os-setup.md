@@ -1,9 +1,9 @@
 ---
 layout: note
-title: 新电脑
+title: 新电脑/系统我的 Setup
 categories: [macos]
-description: 新电脑准备
-keywords: 
+description: 新电脑或系统的准备一系列设置工作，符合我自己的 setup
+keywords: setup, new computer
 ---
 
 ## 浏览器

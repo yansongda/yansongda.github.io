@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: note
 title: 笔记
 description: 一天记录一点点
 keywords: 笔记, note

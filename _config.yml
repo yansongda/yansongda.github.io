@@ -117,6 +117,10 @@ plugins:
     - jemoji
 #     - jekyll-mentions
 collections:
+    notes:
+        output: true
+        permalink: /notes/:path/
+
     wiki:
         output: true
         permalink: /wiki/:path/

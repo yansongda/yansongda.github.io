@@ -71,6 +71,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ```
 
+#### History
+
+https://github.com/atuinsh/atuin
+
+```shell
+bash <(curl https://raw.githubusercontent.com/atuinsh/atuin/main/install.sh)
+```
+
 #### Alias: git
 
 ```shell

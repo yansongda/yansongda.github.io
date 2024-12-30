@@ -36,14 +36,6 @@ keywords: setup, new computer
 
 选择自带 Pro 的 profile 为默认，并更改字体为 `Source Code Pro, 14`，同时放大 terminal 到合适的大小
 
-#### Brew
-
-```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-此命令会同步安装 XCode Command Line Tools
-
 #### OhMyZsh
 
 ```shell
@@ -84,6 +76,21 @@ bash <(curl https://raw.githubusercontent.com/atuinsh/atuin/main/install.sh)
 ```shell
 alias gs="git switch"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glu="git pull upstream"
+```
+
+#### Doggo
+
+```shell
+curl -sS https://raw.githubusercontent.com/mr-karan/doggo/main/install.sh | sh
+```
+
+#### node
+
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+nvm install 22
+corepack enable pnpm
 ```
 
 ### Git
@@ -150,22 +157,17 @@ mv ~/Desktop/public.gpg.asc ~/.ssh/
 
 ### Jetbrains
 
-[下载 ToolBox](https://www.jetbrains.com/toolbox-app/) 并登录帐号，随后下载：
-
-- PHPStorm
-- RustRover
-- DataGrip
+- PHPStorm(https://www.jetbrains.com/phpstorm/download/#section=mac)
+- RustRover(https://www.jetbrains.com/rust/download/?section=mac)
 - ...
-
-下载完毕后打开，并登录帐号同步设置
 
 ### VSCode
 
 [下载](https://code.visualstudio.com/) 后登录 Microsoft 帐号同步设置
 
-### TinyRDM
+### navicat-premium-lite
 
-[https://github.com/tiny-craft/tiny-rdm](https://github.com/tiny-craft/tiny-rdm)
+[下载](https://www.navicat.com.cn/products/navicat-premium-lite) 后登录账号同步
 
 ### Docker
 

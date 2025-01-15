@@ -159,15 +159,12 @@ mv ~/Desktop/public.gpg.asc ~/.ssh/
 
 - PHPStorm(https://www.jetbrains.com/phpstorm/download/#section=mac)
 - RustRover(https://www.jetbrains.com/rust/download/?section=mac)
+- DataGrip(https://www.jetbrains.com/datagrip/download/#section=mac)，下载后，同步 github 数据源
 - ...
 
 ### VSCode
 
 [下载](https://code.visualstudio.com/) 后登录 Microsoft 帐号同步设置
-
-### navicat-premium-lite
-
-[下载](https://www.navicat.com.cn/products/navicat-premium-lite) 后登录账号同步
 
 ### Docker
 

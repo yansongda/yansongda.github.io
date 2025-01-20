@@ -14,15 +14,14 @@ import Project from "../project.astro";
     工作之外折腾的一些项目，时不时上新，记得多回来看看。
   </p>
   <div
-    class="grid items-stretch w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 mt-7"
+    class="grid items-stretch w-full grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-7 mt-7"
   >
     {
-      projects.map((project) => {
+      projects.slice(0, 3).map((project) => {
         return (
           <Project
             name={project.name}
             description={project.description}
-            image={project.image}
             url={project.url}
           />
         )
@@ -31,6 +30,6 @@ import Project from "../project.astro";
   </div>
 
   <div class="flex items-center justify-center w-full py-5">
-    <Button text="View All My Projects" link="/projects" />
+    <Button text="查看所有项目" link="/projects" />
   </div>
 </section>

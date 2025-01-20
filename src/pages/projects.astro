@@ -5,15 +5,15 @@ import Project from "../components/project.astro";
 import Layout from "../layouts/main.astro";
 ---
 
-<Layout title="My Projects">
+<Layout title="项目">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
-      title="My Projects"
-      description="Here are some of the current projects I've been working on. I really enjoy creating new projects and coming up with new ideas. I'm always working on something new, so check back often!"
+      title="项目"
+      description="这是我目前正在折腾的一些项目。我非常喜欢创建新项目并提出新想法。我总是在做一些新的事情，记得常回来看看！"
     />
 
     <div
-      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-2"
+      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-1"
     >
       {
         projects.map((project) => {
@@ -21,7 +21,6 @@ import Layout from "../layouts/main.astro";
             <Project
               name={project.name}
               description={project.description}
-              image={project.image}
               url={project.url}
             />
           )

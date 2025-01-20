@@ -2,6 +2,5 @@
 个人博客
 
 ## License
-MIT
 
-博客模板来自 [mzlogin.github.io](https://github.com/mzlogin/mzlogin.github.io)
+博客模板来自 [astro-aria](https://github.com/ccbikai/astro-aria)

@@ -5,16 +5,16 @@ const allPosts = await getCollection("post");
 const { count } = Astro.props;
 
 const sortedPosts = allPosts
-  .map((post) => ({
-    ...post,
-  }))
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+	.map((post) => ({
+		...post,
+	}))
+	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
 const postsLoop = sortedPosts.slice(0, count).map((post) => {
-  return {
-    ...(post.data || {}),
-    link: `/post/${post.slug}`,
-  };
+	return {
+		...(post.data || {}),
+		link: `/post/${post.slug}`,
+	};
 });
 ---
 

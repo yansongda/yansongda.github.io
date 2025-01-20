@@ -11,7 +11,7 @@
 	},
 	{
 		"name": "rs-application",
-		"description": "自己的应用，由 rust 强力驱动",
+		"description": "自己的小程序应用，由 rust 强力驱动",
 		"url": "https://html.zone"
 	},
 	{
@@ -21,7 +21,7 @@
 	},
 	{
 		"name": "docker-php",
-		"description": "PHP in docker",
+		"description": "PHP 的 Docker 基础镜像，包含 amd64, arm64 等版本",
 		"url": "https://github.com/yansongda/docker-php"
 	}
 ]

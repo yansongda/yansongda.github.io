@@ -1,5 +1,6 @@
 ---
 import projects from "../collections/projects.json";
+import Button from "../components/button.astro";
 import PageHeading from "../components/page-heading.astro";
 import Project from "../components/project.astro";
 import Layout from "../layouts/main.astro";
@@ -9,7 +10,7 @@ import Layout from "../layouts/main.astro";
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
       title="项目"
-      description="这是我目前正在折腾的一些项目。我非常喜欢创建新项目并提出新想法。我总是在做一些新的事情，记得常回来看看！"
+      description="这是我目前正在折腾的一些项目，我总是在做一些新的事情，记得常回来看看！"
     />
 
     <div
@@ -26,6 +27,10 @@ import Layout from "../layouts/main.astro";
           )
         })
       }
+    </div>
+
+    <div class="text-center">
+      <Button text="更多精彩前往 Github" link="https://github.com/yansongda" />
     </div>
   </section>
 </Layout>

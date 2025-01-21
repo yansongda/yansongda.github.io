@@ -1,0 +1,27 @@
+[
+	{
+		"name": "Pay",
+		"description": "可能是我用过的最优雅的 Alipay/WeChat/Douyin/Unipay/江苏银行 的支付 SDK 扩展包了",
+		"url": "https://pay.yansongda.cn"
+	},
+	{
+		"name": "artful",
+		"description": "Api RequesT Framework U Like - 你喜欢的 API 请求框架",
+		"url": "https://artful.yansongda.cn"
+	},
+	{
+		"name": "rs-application",
+		"description": "自己的小程序应用，由 rust 强力驱动",
+		"url": "https://html.zone"
+	},
+	{
+		"name": "laravel-pay",
+		"description": "可能是我用过的最优雅的 Alipay/WeChat/Douyin/Unipay/江苏银行 的 laravel 支付扩展包了",
+		"url": "https://github.com/yansongda/laravel-pay"
+	},
+	{
+		"name": "docker-php",
+		"description": "PHP 的 Docker 基础镜像，包含 amd64, arm64 等版本",
+		"url": "https://github.com/yansongda/docker-php"
+	}
+]

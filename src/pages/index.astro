@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import Button from "../components/button.astro";
+import Projects from "../components/home/projects.astro";
+import Separator from "../components/home/separator.astro";
+import Writings from "../components/home/writings.astro";
+import Layout from "../layouts/main.astro";
+import avatar from "../assets/images/logo.jpg";
+---
+
+<Layout title="闫嵩达">
+  <div
+    class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
+  >
+    <div class="flex flex-col items-center md:flex-row">
+      <div class="relative w-full">
+        <h1
+          class="mb-5 text-4xl font-bold leading-tight lg:text-6xl lg:leading-tight dark:text-white"
+        >
+          <span
+            class="text-transparent bg-clip-text bg-[length:300%]"
+            style="background-image: linear-gradient(to right, rgb(194, 65, 12), rgb(59, 130, 246), rgb(74, 222, 128)); animation: animatedgradient 6s ease infinite alternate;"
+          >
+            Coding My Life...
+          </span>
+        </h1>
+        <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400 typed-[你好，我是闫嵩达;Pay项目维护者;全淦工程师;开源技术爱好者;喜欢新技术;] typed-caret"></p>
+        <Button text="Follow me on Github" link="https://github.com/yansongda" />
+      </div>
+      <div
+        class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
+      >
+        <div class="relative z-30">
+          <Image
+            src={avatar}
+            alt="Yan Songda"
+            width=500
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <Separator text="折腾的一些项目 ↓" />
+  <Projects />
+  <Separator text="瞎写的一些文章 ↓" />
+  <Writings />
+</Layout>

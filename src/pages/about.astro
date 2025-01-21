@@ -1,0 +1,63 @@
+---
+import { Image } from "astro:assets";
+import pay from "../assets/images/pay.jpeg";
+import experiences from "../collections/experiences.json";
+import AboutExperience from "../components/about-experience.astro";
+import PageHeading from "../components/page-heading.astro";
+import Layout from "../layouts/main.astro";
+---
+
+<Layout title="关于我">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading title="我" />
+
+    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">标签</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      后端 cutter 🧑🏻‍💻, 前端 amateur 🤷🏻‍♂️, 持续挖技术坑中 🤦🏻‍♂️
+    </p>
+
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      经历
+    </h2>
+    <div class="px-5 py-10">
+      {
+        experiences.map((experience) => {
+          return (
+            <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+              <AboutExperience
+                dates={experience.dates}
+                role={experience.role}
+                company={experience.company}
+                description={experience.description}
+              />
+            </div>
+          )
+        })
+      }
+    </div>
+
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      送一杯瑞幸吧
+    </h2>
+    <div class="flex items-center justify-center">
+      <Image
+        src={pay}
+        alt="打赏"
+        width=500
+      />
+    </div>
+
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">联系我</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      如果你对我感兴趣，请 <a href="mailto:me@yansongda.cn" class="text-indigo-600 underline">联系我</a> 获取更详细资料，我会及时回复你
+    </p>
+  </section>
+</Layout>

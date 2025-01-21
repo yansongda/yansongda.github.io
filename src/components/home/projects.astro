@@ -1,0 +1,35 @@
+---
+import projects from "../../collections/projects.json";
+import Button from "../button.astro";
+import Project from "../project.astro";
+---
+
+<section class="max-w-4xl mx-auto px-7 lg:px-0">
+  <h2
+    class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
+  >
+    项目
+  </h2>
+  <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
+    工作之外折腾的一些项目，时不时上新，记得多回来看看。
+  </p>
+  <div
+    class="grid items-stretch w-full grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-7 mt-7"
+  >
+    {
+      projects.slice(0, 3).map((project) => {
+        return (
+          <Project
+            name={project.name}
+            description={project.description}
+            url={project.url}
+          />
+        )
+      })
+    }
+  </div>
+
+  <div class="flex items-center justify-center w-full py-5">
+    <Button text="查看所有项目" link="/projects" />
+  </div>
+</section>

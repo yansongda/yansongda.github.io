@@ -2,7 +2,9 @@
 title: 基于 access_token 的多用户多应用 API 认证 laravel 开发包
 description: 基于 access_token 的多用户多应用 API 认证 laravel 开发包
 date: 2018-04-07
-categories: [php, laravel]
+categories:
+  - php
+  - laravel
 ---
 
 

@@ -2,7 +2,11 @@
 title: 可能是我用过的最优雅的 Alipay 和 WeChat 的 laravel 支付扩展包了
 description: 可能是我用过的最优雅的 Alipay 和 WeChat 的 laravel 支付扩展包了
 date: 2017-12-30
-categories: [alipay, wechat, php, laravel]
+categories:
+  - alipay
+  - wechat
+  - php
+  - laravel
 ---
 
 该文档为 v2.x 版本，如果您想找 v1.x 版本文档，请点击[https://github.com/yansongda/laravel-pay/tree/v1.0.3](https://github.com/yansongda/laravel-pay/tree/v1.0.3)

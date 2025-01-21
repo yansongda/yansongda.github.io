@@ -2,7 +2,8 @@
 title: 怎样领导聪明人
 description: 怎样领导聪明人
 date: 2012-11-02
-categories: [reading]
+categories:
+  - reading
 ---
 
 这篇文章是创新工场现任CEO 李开复老师的文章。他说道：想要留住人才，不外乎“授权、信任、感情和奖赏”这四件事。

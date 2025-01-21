@@ -2,7 +2,8 @@
 title: 程序员练级攻略
 description: 程序员练级攻略
 date: 2012-08-29
-categories: [reading]
+categories:
+  - reading
 ---
 
 > 很想有一篇指导性的文章，今天终于看到了。如果你对计算机感兴趣，请看看吧。将你升级！这是一篇很好的文章。

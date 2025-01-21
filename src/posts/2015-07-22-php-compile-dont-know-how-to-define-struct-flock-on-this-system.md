@@ -2,7 +2,10 @@
 title: php编译 Don’t know how to define struct flock on this system 解决办法
 description: php编译 Don’t know how to define struct flock on this system 解决办法
 date: 2015-07-22
-categories: [centos, php, linux]
+categories: 
+  - centos
+  - php
+  - linux
 ---
 
 在对 php 进行编译安装的过程中出现如下错误：checking for known struct flock definition... configure: error: Don't know how to define struct flock on this system, set --enable-opcache=no

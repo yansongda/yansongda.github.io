@@ -2,7 +2,9 @@
 title: 最新 phpmailer 的使用与和 thinkphp 的整合
 description: 最新 phpmailer 的使用与和 thinkphp 的整合
 date: 2015-09-03
-categories: [thinkphp, php]
+categories:
+  - thinkphp
+  - php
 ---
 
 ## 一、说明

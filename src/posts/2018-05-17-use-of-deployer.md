@@ -2,7 +2,11 @@
 title: 自动化部署 deployer 的使用总结分享
 description: 自动化部署 deployer 的使用总结分享
 date: 2018-05-17
-categories: [php, laravel, thinking, holes]
+categories:
+  - php
+  - laravel
+  - thinking
+  - holes
 ---
 
 直到我遇到了「Deployer」，我的双手才彻底解放！

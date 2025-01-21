@@ -2,7 +2,11 @@
 title: MongoDB 分片集群搭建之分片选择分享
 description: MongoDB 分片集群搭建之分片选择分享
 date: 2018-03-15
-categories: [mongodb, linux, database, thinking]
+categories:
+  - mongodb
+  - linux
+  - database
+  - thinking
 ---
 
 

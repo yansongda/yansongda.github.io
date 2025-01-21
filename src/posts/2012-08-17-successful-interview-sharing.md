@@ -2,7 +2,9 @@
 title: 成功的面试心得分享
 description: 成功的面试心得分享
 date: 2012-08-17
-categories: [reading, interview]
+categories:
+  - reading
+  - interview
 ---
 
 > 面试完全不亚于一场激烈的战争，只是这场战争输了不流血，但是心痛。不仅仅是自己无奈的心痛还有父母家人忧虑的心痛。哪么怎么在人海茫茫中脱颖而出呢？

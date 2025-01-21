@@ -2,7 +2,8 @@
 title: 码农是如何炼成的（2）
 description: 码农是如何炼成的（2）
 date: 2014-07-30
-categories: [reading]
+categories:
+  - reading
 ---
 
 想成为一个码农之前，你还是要了解下国内苦逼码农的生存状况。

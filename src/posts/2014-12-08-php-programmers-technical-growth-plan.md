@@ -2,7 +2,9 @@
 title: PHP 程序员的技术成长规划
 description: PHP 程序员的技术成长规划
 date: 2014-12-08
-categories: [php, reading]
+categories: 
+  - php
+  - reading
 ---
 
 按照了解的很多 PHP/LNMP 程序员的发展轨迹，结合个人经验体会，抽象出很多程序员对未来的迷漫，特别对技术学习的盲目和慌乱，简单梳理了这个每个阶段PHP程序员的技术要求，来帮助很多PHP程序做对照设定学习成长目标。

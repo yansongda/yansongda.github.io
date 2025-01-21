@@ -2,7 +2,10 @@
 title: 基于 laravel 的微信模板消息通知系统
 description: 基于laravel的微信模板消息通知系统
 date: 2018-01-15
-categories: [php, laravel, wechat]
+categories:
+  - laravel
+  - wechat
+  - php
 ---
 
 不知道大家有没有基于 laravel 的消息通知开发过微信的模板消息通知，我反正是开发过多次了，以前开发总是写在 app 目录下，然后又一坨都写在自定义的 WechatChannel 里面，看这心里总是不舒服。多次之后，就有了这个……

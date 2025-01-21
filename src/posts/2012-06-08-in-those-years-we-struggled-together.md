@@ -2,7 +2,8 @@
 title: 那些年，我们一起奋斗的日子
 description: 那些年，我们一起奋斗的日子
 date: 2012-06-08
-categories: [thinking]
+categories:
+  - thinking
 ---
 
 本来想写“去年今日”，结果发现太多人都用这个名字。所以，就用这个吧！

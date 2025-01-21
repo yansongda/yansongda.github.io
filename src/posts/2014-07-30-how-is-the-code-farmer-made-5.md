@@ -2,7 +2,8 @@
 title: 码农是如何炼成的（5）
 description: 码农是如何炼成的（5）
 date: 2014-07-30
-categories: [reading]
+categories:
+  - reading
 ---
 
 今天说说有关需求的问题，可能有的人会说我是个码农，需求是产品或者运营的事，与我有毛线关系。

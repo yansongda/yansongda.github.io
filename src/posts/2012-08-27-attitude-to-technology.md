@@ -2,7 +2,8 @@
 title: 对技术的态度
 description: 对技术的态度
 date: 2012-08-27
-categories: [reading]
+categories:
+  - reading
 ---
 
 ## 对于日新月异的新技术，你是什么态度？

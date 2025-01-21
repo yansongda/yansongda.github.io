@@ -2,7 +2,9 @@
 title: 如何运营微信公众账号
 description: 如何运营微信公众账号
 date: 2013-06-24
-categories: [wechat, reading]
+categories:
+  - wechat
+  - reading
 ---
 
 我说：个人觉得微信公众平台最重要的一点就是：用心！用心对待每一个订阅者！

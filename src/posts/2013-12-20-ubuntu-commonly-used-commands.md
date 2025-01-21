@@ -2,7 +2,10 @@
 title: Ubuntu 常用命令大全
 description: Ubuntu常用命令大全
 date: 2013-12-20
-categories: [wiki, linux, ubuntu]
+categories:
+  - wiki
+  - linux
+  - ubuntu
 ---
 
 最近搞了一台VPS，用起来很爽啊。受益匪浅！

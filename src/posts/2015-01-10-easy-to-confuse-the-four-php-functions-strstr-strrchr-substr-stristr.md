@@ -2,7 +2,10 @@
 title: 容易混淆的四个php函数 strstr strrchr substr stristr
 description: 容易混淆的四个php函数 strstr strrchr substr stristr
 date: 2015-01-10
-categories: [php, wiki, thinking]
+categories:
+  - php
+  - wiki
+  - thinking
 ---
 
 `strstr`,`strrchr`,`substr`,`stristr` 这四个字符串操作函数特别让人容易混淆，我经常用的是`substr`,`strstr`，基本上能满足我对字符串的操作。

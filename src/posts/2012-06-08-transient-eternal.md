@@ -2,7 +2,8 @@
 title: 短暂-永恒
 description: 短暂-永恒
 date: 2012-06-08
-categories: [thinking]
+categories:
+  - thinking
 ---
 
 一组看似矛盾的词语，突然间发现配合起来是如此的完美与贴切。

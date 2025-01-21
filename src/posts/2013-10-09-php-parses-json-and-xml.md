@@ -2,7 +2,8 @@
 title: PHP 解析 JSON 与 XML 数据
 description: PHP 解析 JSON 与 XML 数据
 date: 2013-10-09
-categories: [php]
+categories:
+  - php
 ---
 
 与大多数流行的 Web 服务如 twitter 通过开放 API 来提供数据一样，它总是能够知道如何解析 API 数据的各种传送格式，包括 JSON，XML 等等。

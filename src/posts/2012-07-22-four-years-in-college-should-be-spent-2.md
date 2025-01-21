@@ -2,7 +2,9 @@
 title: 大学四年应该这样度过（二）
 description: 大学四年应该这样度过（二）
 date: 2012-07-22
-categories: [college, reading]
+categories:
+  - college
+  - reading
 ---
 
 ## 自修之道：从举一反三到无师自通

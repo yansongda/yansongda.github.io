@@ -2,7 +2,10 @@
 title: Centos 7 搭建 L2TP VPN 服务器（firewalld 方案）
 description: centos 搭建 L2TP VPN 服务器 firewalld 方案
 date: 2016-11-15
-categories: [centos, vpn, linux]
+categories:
+  - centos
+  - vpn
+  - linux
 ---
 
 最近 mac os 更新，导致 PPTP xxxx 方案不可行了。于是……

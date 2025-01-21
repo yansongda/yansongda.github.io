@@ -2,7 +2,10 @@
 title: Centos 7 搭建 PPTP VPN 服务器（firewalld + iptables 方案）
 description: Centos 7 搭建 PPTP VPN 服务器 firewalld + iptables 方案
 date: 2016-08-31
-categories: [centos, vpn, linux]
+categories:
+  - centos
+  - vpn
+  - linux
 ---
 
 工作原因，好长时间没写博客了。

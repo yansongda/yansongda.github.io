@@ -2,7 +2,10 @@
 title: 面试70问经典回答
 description: 面试70问经典回答
 date: 2012-08-03
-categories: [reading, college, interview]
+categories:
+  - reading
+  - college
+  - interview
 ---
 
 > 现在大学生找工作是越来越难，个个公司都要什么几年几年的工作经验，，我在想，你们都要几年的工作经验，那我们最初的那几年工作经验到底在哪儿搞到咧？真搞笑！不过，面试的时候，一些技巧还是要的。

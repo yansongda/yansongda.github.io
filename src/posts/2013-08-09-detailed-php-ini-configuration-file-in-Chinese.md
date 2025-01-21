@@ -2,7 +2,9 @@
 title: php.ini 配置文件中文详解
 description: php.ini 配置文件中文详解
 date: 2013-08-09
-categories: [php, wiki]
+categories:
+  - php
+  - wiki
 ---
 
 ;;;;;;;;;;;

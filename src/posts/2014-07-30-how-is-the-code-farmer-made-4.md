@@ -2,7 +2,8 @@
 title: 码农是如何炼成的（4）
 description: 码农是如何炼成的（4）
 date: 2014-07-30
-categories: [reading]
+categories:
+  - reading
 ---
 
 

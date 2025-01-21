@@ -2,7 +2,9 @@
 title: php 使用 curl 访问 https 返回无结果的问题
 description: php使用curl访问https返回无结果的问题
 date: 2014-10-13
-categories: [php, holes]
+categories: 
+  - php
+  - holes
 ---
 
 最近在开发一套自己的微信公众平台SDK ，目的就是为了让自己以后管理更方便。

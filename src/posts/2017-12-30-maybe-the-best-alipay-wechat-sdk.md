@@ -2,7 +2,10 @@
 title: 可能是我用过的最优雅的 Alipay 和 WeChat 的支付 SDK 扩展包了
 description: 可能是我用过的最优雅的 Alipay 和 WeChat 的支付 SDK 扩展包了
 date: 2017-12-30
-categories: [alipay, wechat, php]
+categories:
+  - alipay
+  - wechat
+  - php
 ---
 
 开发了多次支付宝与微信支付后，很自然产生一种反感，惰性又来了，想在网上找相关的轮子，可是一直没有找到一款自己觉得逞心如意的，要么使用起来太难理解，要么文件结构太杂乱，只有自己撸起袖子干了。

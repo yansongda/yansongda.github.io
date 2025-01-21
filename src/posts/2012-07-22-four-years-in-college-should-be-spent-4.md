@@ -2,7 +2,9 @@
 title: 大学四年应该这样度过（四）
 description: 大学四年应该这样度过（四）
 date: 2012-07-22
-categories: [college, reading]
+categories:
+  - college
+  - reading
 ---
 
 ## 为人处事：培养友情，参与群体

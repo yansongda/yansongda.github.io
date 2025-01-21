@@ -18,6 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
 	headerElement = document.getElementById("header");
 
 	if (
+		localStorage.getItem("theme") &&
+		localStorage.getItem("theme") === "dark"
+	) {
+		window.darkMode = true;
+		showNight();
+	} else {
+		showDay();
+	}
+
+	stickyHeaderFuncionality();
+	applyMenuItemClasses();
+	evaluateHeaderPosition();
+	mobileMenuFunctionality();
+});
+	if (
 		localStorage.getItem("dark_mode") &&
 		localStorage.getItem("dark_mode") === "true"
 	) {
@@ -26,22 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	} else {
 		showDay();
 	}
-	stickyHeaderFuncionality();
-	applyMenuItemClasses();
-	evaluateHeaderPosition();
-	mobileMenuFunctionality();
-});
-
-// window.toggleDarkMode = function(){
-//     document.documentElement.classList.toggle('dark');
-//     if(document.documentElement.classList.contains('dark')){
-//         localStorage.setItem('dark_mode', true);
-//         window.darkMode = true;
-//     } else {
-//         window.darkMode = false;
-//         localStorage.setItem('dark_mode', false);
-//     }
-// }
 
 window.stickyHeaderFuncionality = () => {
 	window.addEventListener("scroll", () => {
@@ -73,10 +72,10 @@ document.getElementById("darkToggle").addEventListener("click", () => {
 	document.documentElement.classList.add("duration-300");
 
 	if (document.documentElement.classList.contains("dark")) {
-		localStorage.removeItem("dark_mode");
+		localStorage.removeItem("theme");
 		showDay(true);
 	} else {
-		localStorage.setItem("dark_mode", true);
+		localStorage.setItem("theme", 'dark');
 		showNight(true);
 	}
 });

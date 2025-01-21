@@ -26,6 +26,9 @@ importers:
       astro:
         specifier: ^5.1.7
         version: 5.1.7(jiti@1.21.7)(rollup@4.31.0)(typescript@5.7.3)(yaml@2.7.0)
+      tailwind-plugin-typed:
+        specifier: ^0.8.0
+        version: 0.8.0(tailwindcss@3.4.17)
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17
@@ -1732,6 +1735,11 @@ packages:
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  tailwind-plugin-typed@0.8.0:
+    resolution: {integrity: sha512-pgUpRhHuMr4jCaLXmVA6ugwZIUTNYhKGYawjgNwgiyNd3qLSRpGInXahrzPQyzrft9T0PBeII9vwI6LdjiQ3OA==}
+    peerDependencies:
+      tailwindcss: ^3.0.0
 
   tailwindcss@3.4.17:
     resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
@@ -4133,6 +4141,10 @@ snapshots:
       ts-interface-checker: 0.1.13
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  tailwind-plugin-typed@0.8.0(tailwindcss@3.4.17):
+    dependencies:
+      tailwindcss: 3.4.17
 
   tailwindcss@3.4.17:
     dependencies:

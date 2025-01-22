@@ -12,7 +12,7 @@
 	{
 		"name": "rs-application",
 		"description": "自己的小程序应用，由 rust 强力驱动",
-		"url": "https://html.zone"
+		"url": "https://github.com/yansongda/rs-application"
 	},
 	{
 		"name": "laravel-pay",

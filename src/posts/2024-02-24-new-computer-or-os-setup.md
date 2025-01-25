@@ -128,6 +128,7 @@ mv ~/Desktop/gitignore_global.bak ~/.gitignore_global
 执行以下命令：
 
 ```shell
+mkdir -p ~/.ssh/
 mv ~/Desktop/config.bak ~/.ssh/config
 mv ~/Desktop/id_rsa.bak ~/.ssh/id_rsa
 mv ~/Desktop/id_rsa.pub ~/.ssh/
@@ -135,6 +136,8 @@ mv ~/Desktop/work_rsa.bak ~/.ssh/work_rsa
 mv ~/Desktop/work_rsa.pub ~/.ssh/
 mv ~/Desktop/private.gpg.asc ~/.ssh/
 mv ~/Desktop/public.gpg.asc ~/.ssh/
+chmod 600 ~/.ssh/id_rsa
+chmod 600 ~/.ssh/work_rsa
 ```
 
 ## 通讯软件

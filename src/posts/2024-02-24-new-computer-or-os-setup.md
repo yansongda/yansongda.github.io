@@ -99,6 +99,12 @@ nvm install 22
 corepack enable pnpm
 ```
 
+### Rust
+
+```shell
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
 ## Git
 
 从家庭存储里下载以下文件，并放到桌面：
@@ -151,8 +157,11 @@ chmod 600 ~/.ssh/work_rsa
 ## 开发工具
 
 - [PHPStorm](https://www.jetbrains.com/phpstorm/download/#section=mac)
+  - 字体：SourceCodePro, 16, 1.2 
 - [RustRover](https://www.jetbrains.com/rust/download/?section=mac)
+  - 字体：SourceCodePro, 16, 1.2 
 - [DataGrip](https://www.jetbrains.com/datagrip/download/#section=mac) 同步 github 数据源
+  - 字体：SourceCodePro, 16, 1.2 
 - [VSCode](https://code.visualstudio.com/) 登录 Microsoft 帐号同步设置
 - [Docker](https://docs.docker.com/desktop/install/mac-install/)
 - [Wireshark](https://www.wireshark.org/download.html)

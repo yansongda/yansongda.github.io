@@ -103,24 +103,24 @@ corepack enable pnpm
 
 从家庭存储里下载以下文件，并放到桌面：
 
-- gitconfig
-- gitignore_global
+- gitconfig.bak
+- gitignore_global.bak
 
 执行以下命令：
 
 ```shell
-mv ~/Desktop/gitconfig ~/.gitconfig
-mv ~/Desktop/gitignore_global ~/.gitignore_global
+mv ~/Desktop/gitconfig.bak ~/.gitconfig
+mv ~/Desktop/gitignore_global.bak ~/.gitignore_global
 ```
 
 ## SSH
 
 从家庭存储里下载以下文件，并放到桌面：
 
-- config
-- id_rsa
+- config.bak
+- id_rsa.bak
 - id_rsa.pub
-- work_rsa
+- work_rsa.bak
 - work_rsa.pub
 - private.gpg.asc
 - public.gpg.asc
@@ -128,10 +128,10 @@ mv ~/Desktop/gitignore_global ~/.gitignore_global
 执行以下命令：
 
 ```shell
-mv ~/Desktop/config ~/.ssh/
-mv ~/Desktop/id_rsa ~/.ssh/
+mv ~/Desktop/config.bak ~/.ssh/config
+mv ~/Desktop/id_rsa.bak ~/.ssh/id_rsa
 mv ~/Desktop/id_rsa.pub ~/.ssh/
-mv ~/Desktop/work_rsa ~/.ssh/
+mv ~/Desktop/work_rsa.bak ~/.ssh/work_rsa
 mv ~/Desktop/work_rsa.pub ~/.ssh/
 mv ~/Desktop/private.gpg.asc ~/.ssh/
 mv ~/Desktop/public.gpg.asc ~/.ssh/
@@ -164,4 +164,4 @@ mv ~/Desktop/public.gpg.asc ~/.ssh/
 ## 娱乐
 
 - [网易云音乐](https://music.163.com/)
-- [IINA](https://iina.io/)
+- [IINA](https://iina.io/) / [VLC](https://www.videolan.org/)

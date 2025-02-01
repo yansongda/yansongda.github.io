@@ -1,0 +1,35 @@
+---
+import type { GetStaticPaths } from "astro";
+import PageHeading from "@components/page-heading.astro";
+import Po from "@components/posts.astro";
+import Layout from "@layouts/main.astro";
+import post from "@utils/post";
+
+export const getStaticPaths = (async ({paginate}) => {
+  const posts = await post.all();
+  
+  return paginate(posts);
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<Layout title="文章">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="文章"
+      description="不写代码的时候也写一些技术文章，如果您看得过眼，可以订阅我的博客。"
+    />
+
+    <div class="z-50 flex flex-col items-stretch w-full gap-5 my-8">
+      <Po posts={page.data} />
+    </div>
+    
+    <div class="flex justify-center items-center gap-5">
+      {page.url.first ? <a href={page.url.first} class="text-gray-500 hover:text-gray-800 dark:text-neutral-100">第一页</a> : null}
+      {page.url.prev ? <a href={page.url.prev} class="text-gray-500 hover:text-gray-800 dark:text-neutral-100">上一页</a> : null}
+      {page.url.next ? <a href={page.url.next} class="text-gray-500 hover:text-gray-800 dark:text-neutral-100">下一页</a> : null}
+      {page.url.last ? <a href={page.url.last} class="text-gray-500 hover:text-gray-800 dark:text-neutral-100">最后一页</a> : null}
+    </div>
+  </section>
+</Layout>

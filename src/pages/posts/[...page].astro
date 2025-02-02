@@ -4,6 +4,7 @@ import PageHeading from "@components/page-heading.astro";
 import Po from "@components/posts.astro";
 import Layout from "@layouts/main.astro";
 import post from "@utils/post";
+import Button from "@components/button.astro";
 
 export const getStaticPaths = (async ({paginate}) => {
   const posts = await post.all();
@@ -26,10 +27,17 @@ const { page } = Astro.props;
     </div>
     
     <div class="flex justify-center items-center gap-5">
-      {page.url.first ? <a href={page.url.first} class="text-gray-500 hover:text-gray-800 dark:text-neutral-100">第一页</a> : null}
-      {page.url.prev ? <a href={page.url.prev} class="text-gray-500 hover:text-gray-800 dark:text-neutral-100">上一页</a> : null}
-      {page.url.next ? <a href={page.url.next} class="text-gray-500 hover:text-gray-800 dark:text-neutral-100">下一页</a> : null}
-      {page.url.last ? <a href={page.url.last} class="text-gray-500 hover:text-gray-800 dark:text-neutral-100">最后一页</a> : null}
+      {
+        ['第一页', '上一页', '下一页', '最后一页'].map((text, index) => {
+          const links = [page.url.first, page.url.prev, page.url.next, page.url.last];
+          const link = links[index] || '#';
+          const disabled = !links[index];
+          
+          return (
+            <Button text={text} link={link} target="_self" disabled={disabled} />
+          );
+        })
+      }
     </div>
   </section>
 </Layout>

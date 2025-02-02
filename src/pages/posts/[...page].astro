@@ -1,0 +1,43 @@
+---
+import type { GetStaticPaths } from "astro";
+import PageHeading from "@components/page-heading.astro";
+import Po from "@components/posts.astro";
+import Layout from "@layouts/main.astro";
+import post from "@utils/post";
+import Button from "@components/button.astro";
+
+export const getStaticPaths = (async ({paginate}) => {
+  const posts = await post.all();
+  
+  return paginate(posts);
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<Layout title="文章">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="文章"
+      description="不写代码的时候也写一些技术文章，如果您看得过眼，可以订阅我的博客。"
+    />
+
+    <div class="z-50 flex flex-col items-stretch w-full gap-5 my-8">
+      <Po posts={page.data} />
+    </div>
+    
+    <div class="flex justify-center items-center gap-5">
+      {
+        ['第一页', '上一页', '下一页', '最后一页'].map((text, index) => {
+          const links = [page.url.first, page.url.prev, page.url.next, page.url.last];
+          const link = links[index] || '#';
+          const disabled = !links[index];
+          
+          return (
+            <Button text={text} link={link} target="_self" disabled={disabled} />
+          );
+        })
+      }
+    </div>
+  </section>
+</Layout>

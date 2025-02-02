@@ -1,17 +1,19 @@
 ---
-import { getCollection } from "astro:content";
+import type { Post } from '@utils/post';
+import post from '@utils/post';
 
-const { count } = Astro.props;
+interface Props {
+  posts?: Post[];
+  count?: number;
+}
 
-const posts = (await getCollection("posts"))
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, count)
-  .map((post) => {
-    return {
-      ...(post.data || {}),
-      link: `/post/${post.id}`,
-    };
-  });
+let { posts, count } = Astro.props;
+
+posts = posts || await post.all();
+
+if (count) {
+  posts = posts.slice(0, count);
+}
 ---
 
 {
@@ -75,7 +77,7 @@ const posts = (await getCollection("posts"))
             <span>{post.description}</span>
           </p>
           <div class="mt-2.5 text-xs font-medium text-neutral-800 dark:text-neutral-300">
-            Posted on {post.date.toLocaleDateString()}
+            发表于 {post.date.toLocaleDateString()}
           </div>
         </div>
       </div>

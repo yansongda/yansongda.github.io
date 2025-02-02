@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		localStorage.getItem("theme") === "dark"
 	) {
 		window.darkMode = true;
-		showNight();
+		showMoon();
 	} else {
-		showDay();
+		showSun();
 	}
 
 	stickyHeaderFuncionality();
@@ -32,15 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	evaluateHeaderPosition();
 	mobileMenuFunctionality();
 });
-	if (
-		localStorage.getItem("dark_mode") &&
-		localStorage.getItem("dark_mode") === "true"
-	) {
-		window.darkMode = true;
-		showNight();
-	} else {
-		showDay();
-	}
 
 window.stickyHeaderFuncionality = () => {
 	window.addEventListener("scroll", () => {
@@ -72,15 +63,15 @@ document.getElementById("darkToggle").addEventListener("click", () => {
 	document.documentElement.classList.add("duration-300");
 
 	if (document.documentElement.classList.contains("dark")) {
-		localStorage.removeItem("theme");
-		showDay(true);
+		localStorage.setItem("theme", 'light');
+		showSun(true);
 	} else {
 		localStorage.setItem("theme", 'dark');
-		showNight(true);
+		showMoon(true);
 	}
 });
 
-function showDay(animate) {
+function showSun(animate) {
 	document.getElementById("sun").classList.remove("setting");
 	document.getElementById("moon").classList.remove("rising");
 
@@ -103,7 +94,7 @@ function showDay(animate) {
 	}, timeout);
 }
 
-function showNight(animate) {
+function showMoon(animate) {
 	document.getElementById("moon").classList.remove("setting");
 	document.getElementById("sun").classList.remove("rising");
 

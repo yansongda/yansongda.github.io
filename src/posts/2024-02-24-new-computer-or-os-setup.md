@@ -93,9 +93,11 @@ curl -sS https://raw.githubusercontent.com/mr-karan/doggo/main/install.sh | sh
 
 ### node
 
+https://github.com/nvm-sh/nvm
+
 ```shell
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-nvm install 22
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+nvm install --lts
 corepack enable pnpm
 ```
 

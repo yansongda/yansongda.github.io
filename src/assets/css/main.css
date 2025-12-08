@@ -1,13 +1,6 @@
 @import 'tailwindcss';
 
 @plugin '@tailwindcss/typography';
-@plugin 'tailwind-plugin-typed' {
-  delimiter: ';';
-  typeLetterDuration: 0.1;
-  pauseAfterWordDuration: 2;
-  deleteLetterDuration: 0.05;
-  pauseAfterDeletionDuration: 1;
-}
 
 @custom-variant dark (&:is(.dark *));
 

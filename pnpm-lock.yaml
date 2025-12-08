@@ -29,9 +29,6 @@ importers:
       sharp:
         specifier: ^0.34.5
         version: 0.34.5
-      tailwind-plugin-typed:
-        specifier: ^1.1.2
-        version: 1.1.2(tailwindcss@4.1.17)
       tailwindcss:
         specifier: ^4.1.17
         version: 4.1.17
@@ -1736,11 +1733,6 @@ packages:
     resolution: {integrity: sha512-VvrHQ+9uniE+Mvx3+C9IEe/lWasXCU0nXMY2kZeLrHNICuRiC8uMPyM14UEaMOFA5mhyQqEkB02VoQ16n3DLaw==}
     engines: {node: '>=16'}
     hasBin: true
-
-  tailwind-plugin-typed@1.1.2:
-    resolution: {integrity: sha512-+/SIosEhjFWS4E1kn2rmtAWxFM3pMpNXfgcpLwZuWg05icTkLjcdcKA41eET2QN3Bm++B0/5rg1ymSjwoBkJXw==}
-    peerDependencies:
-      tailwindcss: ^3.0.0 || ^4.0.0
 
   tailwindcss@4.1.17:
     resolution: {integrity: sha512-j9Ee2YjuQqYT9bbRTfTZht9W/ytp5H+jJpZKiYdP/bpnXARAuELt9ofP0lPnmHjbga7SNQIxdTAXCmtKVYjN+Q==}
@@ -4085,10 +4077,6 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
       sax: 1.4.3
-
-  tailwind-plugin-typed@1.1.2(tailwindcss@4.1.17):
-    dependencies:
-      tailwindcss: 4.1.17
 
   tailwindcss@4.1.17: {}
 

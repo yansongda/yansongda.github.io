@@ -11,7 +11,7 @@
 	},
 	{
 		"name": "rs-application",
-		"description": "自己的小程序应用，由 rust 强力驱动",
+		"description": "自己的应用服务，由 Rust 强力驱动。目前提供微信小程序与华为原生云服务。",
 		"url": "https://github.com/yansongda/rs-application"
 	},
 	{

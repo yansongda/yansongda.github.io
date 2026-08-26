@@ -96,8 +96,11 @@ const feed = "https://yansongda.cn/rss.xml";
               navigator.clipboard.writeText(input.value).then(done);
             } else {
               input.select();
-              document.execCommand("copy");
-              done();
+              input.setSelectionRange(0, input.value.length);
+              const btn = input.nextElementSibling;
+              const old = btn.textContent;
+              btn.textContent = "请按 Ctrl+C 复制";
+              setTimeout(() => (btn.textContent = old), 2000);
             }
           };
         </script>

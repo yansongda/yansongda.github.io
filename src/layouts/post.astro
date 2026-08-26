@@ -1,10 +1,12 @@
 ---
+import Toc from "@components/toc.astro";
 import Layout from "@layouts/main.astro";
 
-const { frontmatter, prev, next } = Astro.props;
+const { frontmatter, prev, next, headings } = Astro.props;
 ---
 
 <Layout title={frontmatter.title} description={frontmatter.description}>
+  <Toc headings={headings} />
   <main
     class="relative z-30 max-w-4xl pb-1 mx-auto mt-10 bg-white dark:bg-neutral-950 md:rounded-t-md text-neutral-900"
   >
@@ -79,4 +81,5 @@ const { frontmatter, prev, next } = Astro.props;
       ) : null
     }
   </main>
+  <script src="../assets/js/toc.js"></script>
 </Layout>

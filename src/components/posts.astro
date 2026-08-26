@@ -1,6 +1,6 @@
 ---
-import type { Post } from '@utils/post';
-import post from '@utils/post';
+import type { Post } from "@utils/post";
+import post from "@utils/post";
 
 interface Props {
   posts?: Post[];
@@ -9,7 +9,7 @@ interface Props {
 
 let { posts, count } = Astro.props;
 
-posts = posts || await post.all();
+posts = posts || (await post.all());
 
 if (count) {
   posts = posts.slice(0, count);

@@ -1,14 +1,14 @@
 ---
-import type { GetStaticPaths } from "astro";
+import Button from "@components/button.astro";
 import PageHeading from "@components/page-heading.astro";
 import Po from "@components/posts.astro";
 import Layout from "@layouts/main.astro";
 import post from "@utils/post";
-import Button from "@components/button.astro";
+import type { GetStaticPaths } from "astro";
 
-export const getStaticPaths = (async ({paginate}) => {
+export const getStaticPaths = (async ({ paginate }) => {
   const posts = await post.all();
-  
+
   return paginate(posts);
 }) satisfies GetStaticPaths;
 

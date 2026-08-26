@@ -27,9 +27,7 @@ const feed = "https://yansongda.cn/rss.xml";
         </div>
       </div>
       <div class="w-full mt-10 md:w-1/3 md:mt-0">
-        <form
-          method="get"
-          action={feed}
+        <div
           class="p-6 border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600"
         >
           <div class="relative flex items-center space-x-2">
@@ -67,19 +65,42 @@ const feed = "https://yansongda.cn/rss.xml";
             <input
               type="url"
               readonly
-              placeholder="Email address"
-              aria-label="Email address"
+              id="rss-url"
+              aria-label="RSS address"
               required=""
               value={feed}
               class="w-full h-10 px-3 text-sm border border-dashed rounded-md focus:ring-0 focus:outline-black border-neutral-400 dark:border-neutral-600 dark:bg-neutral-800 dark:placeholder-neutral-400 dark:text-white"
             />
             <button
-              type="submit"
+              type="button"
+              onclick="copyRssUrl()"
               class="block w-full px-4 py-2 mt-5 text-xs font-semibold text-center duration-300 ease-out border rounded-sm bg-neutral-900 dark:bg-neutral-100 dark:hover:border-neutral-300 dark:text-neutral-800 dark:hover:bg-neutral-950 dark:hover:text-neutral-100 text-neutral-100 border-neutral-900 hover:bg-white hover:text-neutral-900"
-              >订阅</button
+              >复制 RSS 地址</button
             >
           </div>
-        </form>
+        </div>
+
+        <script is:inline>
+          window.copyRssUrl = () => {
+            const input = document.getElementById("rss-url");
+            if (!input) return;
+
+            const done = () => {
+              const btn = input.nextElementSibling;
+              const old = btn.textContent;
+              btn.textContent = "已复制 ✓";
+              setTimeout(() => (btn.textContent = old), 1500);
+            };
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(input.value).then(done);
+            } else {
+              input.select();
+              document.execCommand("copy");
+              done();
+            }
+          };
+        </script>
       </div>
     </div>
   </div>

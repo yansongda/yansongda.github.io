@@ -1,0 +1,50 @@
+---
+import skills from "@collections/skills.json";
+---
+
+<div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+  {
+    skills.map((group) => {
+      return (
+        <div
+          class:list={[
+            "flex flex-col p-5 border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600",
+            group.wide && "sm:col-span-2",
+          ]}
+        >
+          <h3
+            class="flex items-center text-sm font-semibold text-neutral-900 dark:text-neutral-100"
+          >
+            <span class="mr-2">{group.emoji}</span>
+            {group.category}
+          </h3>
+          <p class="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+            {group.note}
+          </p>
+          <div class="flex flex-col gap-2.5 mt-4">
+            {
+              group.skills.map((skill) => {
+                return (
+                  <div
+                    class="grid grid-cols-[7rem_1fr] gap-x-3 items-start pb-2 border-b border-dashed border-neutral-200 dark:border-neutral-800 last:border-b-0 last:pb-0"
+                  >
+                    <span
+                      class="text-sm font-semibold text-neutral-900 dark:text-neutral-100"
+                    >
+                      {skill.name}
+                    </span>
+                    <span
+                      class="text-xs leading-5 text-neutral-500 dark:text-neutral-400"
+                    >
+                      {skill.note}
+                    </span>
+                  </div>
+                )
+              })
+            }
+          </div>
+        </div>
+      )
+    })
+  }
+</div>

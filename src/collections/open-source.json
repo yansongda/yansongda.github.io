@@ -1,0 +1,37 @@
+[
+  {
+    "name": "pay",
+    "description": "可能是我用过的最优雅的 Alipay/WeChat/Douyin/Unipay/江苏银行 的支付 SDK 扩展包了",
+    "url": "https://github.com/yansongda/pay",
+    "stars": 5365,
+    "language": "PHP"
+  },
+  {
+    "name": "opencode-stats-engine",
+    "description": "OpenCode 事件溯源统计引擎：监听事件、持久化到本地 SQLite，提供统计面板、REST API 与 SSE 实时更新",
+    "url": "https://github.com/yansongda/opencode-stats-engine",
+    "stars": 2,
+    "language": "TypeScript"
+  },
+  {
+    "name": "docker-compose-LNMP",
+    "description": "docker-compose with latest php-fpm, nginx, redis, memcached, mariadb",
+    "url": "https://github.com/yansongda/docker-compose-LNMP",
+    "stars": 37,
+    "language": "Docker"
+  },
+  {
+    "name": "python-aliyun-iot-device",
+    "description": "非官方，阿里云 IOT 套件设备端 Python 开发 SDK",
+    "url": "https://github.com/yansongda/python-aliyun-iot-device",
+    "stars": 9,
+    "language": "Python"
+  },
+  {
+    "name": "application",
+    "description": "自己的应用服务，由 Rust 强力驱动。目前提供微信小程序与华为原生云服务",
+    "url": "https://github.com/yansongda/application",
+    "stars": 2,
+    "language": "Rust"
+  }
+]

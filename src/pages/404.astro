@@ -1,0 +1,23 @@
+---
+import Button from "@components/button.astro";
+import Layout from "@layouts/main.astro";
+---
+
+<Layout title="404" description="页面走丢了，可能是我挖坑挖太深 🕳️">
+  <section
+    class="relative z-20 max-w-2xl mx-auto my-24 px-7 text-center lg:px-0"
+  >
+    <p class="text-sm uppercase tracking-widest text-neutral-400">Error 404</p>
+    <h1
+      class="mt-2 text-6xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100"
+    >
+      页面走丢了
+    </h1>
+    <p class="mt-4 text-neutral-600 dark:text-neutral-400">
+      可能是我挖坑挖太深，把路挖断了 🕳️
+    </p>
+    <div class="flex justify-center">
+      <Button text="回到首页" link="/" target="_self" />
+    </div>
+  </section>
+</Layout>

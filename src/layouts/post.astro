@@ -1,10 +1,12 @@
 ---
+import Toc from "@components/toc.astro";
 import Layout from "@layouts/main.astro";
 
-const { frontmatter } = Astro.props;
+const { frontmatter, prev, next, headings } = Astro.props;
 ---
 
-<Layout title={frontmatter.title}>
+<Layout title={frontmatter.title} description={frontmatter.description}>
+  <Toc headings={headings} />
   <main
     class="relative z-30 max-w-4xl pb-1 mx-auto mt-10 bg-white dark:bg-neutral-950 md:rounded-t-md text-neutral-900"
   >
@@ -31,5 +33,53 @@ const { frontmatter } = Astro.props;
     >
       <slot />
     </article>
+
+    {
+      prev || next ? (
+        <nav
+          class="flex flex-col gap-4 max-w-2xl mx-auto mt-6 mb-20 px-7 lg:px-0 sm:flex-row"
+        >
+          {
+            prev ? (
+              <a
+                href={`/post/${prev.id}`}
+                class="group flex-1 p-5 border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600 transition-colors duration-300 hover:border-neutral-400 dark:hover:border-neutral-500"
+              >
+                <div class="text-xs text-neutral-500 dark:text-neutral-400">
+                  ← 上一篇
+                </div>
+                <div
+                  class="mt-1.5 text-sm font-semibold leading-6 line-clamp-2 text-neutral-900 dark:text-neutral-100"
+                >
+                  {prev.data.title}
+                </div>
+              </a>
+            ) : (
+              <span class="flex-1" />
+            )
+          }
+          {
+            next ? (
+              <a
+                href={`/post/${next.id}`}
+                class="group flex-1 p-5 text-right border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600 transition-colors duration-300 hover:border-neutral-400 dark:hover:border-neutral-500"
+              >
+                <div class="text-xs text-neutral-500 dark:text-neutral-400">
+                  下一篇 →
+                </div>
+                <div
+                  class="mt-1.5 text-sm font-semibold leading-6 line-clamp-2 text-neutral-900 dark:text-neutral-100"
+                >
+                  {next.data.title}
+                </div>
+              </a>
+            ) : (
+              <span class="flex-1" />
+            )
+          }
+        </nav>
+      ) : null
+    }
   </main>
+  <script src="../assets/js/toc.js"></script>
 </Layout>

@@ -3,7 +3,15 @@ import Footer from "@components/footer.astro";
 import Header from "@components/header.astro";
 import SquareLines from "@components/square-lines.astro";
 
-const { title } = Astro.props;
+const {
+  title,
+  description = "闫嵩达的个人主页：一个全淦工程师的 Coding My Life，分享技术文章与开源项目（Pay 支付 SDK 等）",
+} = Astro.props;
+
+const site = new URL(Astro.site?.toString() || "https://yansongda.cn");
+const pageUrl = new URL(Astro.url.pathname, site).toString();
+const ogImage = new URL("/images/logo.jpg", site).toString();
+const fullTitle = `${title} | yansongda`;
 ---
 
 <!doctype html>
@@ -11,7 +19,26 @@ const { title } = Astro.props;
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title} | yansongda</title>
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="闫嵩达" />
+    <link rel="canonical" href={pageUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="yansongda" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="640" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <!-- Used to add dark mode right away, adding here prevents any flicker -->
     <script is:inline>

@@ -8,7 +8,10 @@ import Writings from "@components/home/writings.astro";
 import Layout from "@layouts/main.astro";
 ---
 
-<Layout title="闫嵩达">
+<Layout
+  title="闫嵩达"
+  description="闫嵩达的个人主页：全淦工程师，Pay 支付 SDK 维护者，正在 Rust 深水区挣扎 🦀"
+>
   <div
     class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
   >
@@ -18,32 +21,78 @@ import Layout from "@layouts/main.astro";
           class="mb-5 text-4xl font-bold leading-tight lg:text-6xl lg:leading-tight dark:text-white"
         >
           <span
-            class="text-transparent bg-clip-text bg-[length:300%]"
+            class="text-transparent bg-clip-text bg-size-[300%]"
             style="background-image: linear-gradient(to right, rgb(194, 65, 12), rgb(59, 130, 246), rgb(74, 222, 128)); animation: animatedgradient 6s ease infinite alternate;"
           >
             Coding My Life...
           </span>
         </h1>
         <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-          <span 
-            data-typed='["你好，我是闫嵩达", "Pay 项目维护者", "全淦工程师", "开源技术爱好者", "喜欢新技术"]'
+          <span
+            data-typed='["你好，我是闫嵩达", "全网最会写支付的 PHP 程序员（自封）", "正在 Rust 深水区挣扎中", "全淦工程师", "持续挖坑，敬请期待"]'
             data-type-speed="100"
             data-delete-speed="50"
-            data-pause-duration="2000"
-          ></span>
+            data-pause-duration="2000"></span>
         </p>
-        <Button text="Follow me on Github" link="https://github.com/yansongda"/>
+        <div class="flex flex-wrap items-center gap-3">
+          <Button
+            text="Follow me on Github"
+            link="https://github.com/yansongda"
+          />
+          <Button text="关于我" link="/about" target="_self" />
+        </div>
       </div>
       <div
         class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
       >
         <div class="relative z-30">
-          <Image
-            src={avatar}
-            alt="Yan Songda"
-            width=500
-          />
+          <Image src={avatar} alt="Yan Songda" width="500" />
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="relative z-20 grid w-full max-w-4xl grid-cols-2 gap-4 mx-auto px-7 mt-14 sm:grid-cols-4 xl:px-0"
+  >
+    <div
+      class="p-4 text-center border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600"
+    >
+      <div class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+        10年+
+      </div>
+      <div class="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+        工程经验
+      </div>
+    </div>
+    <div
+      class="p-4 text-center border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600"
+    >
+      <div class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+        49
+      </div>
+      <div class="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+        篇文章
+      </div>
+    </div>
+    <div
+      class="p-4 text-center border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600"
+    >
+      <div class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+        5+
+      </div>
+      <div class="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+        开源项目
+      </div>
+    </div>
+    <div
+      class="p-4 text-center border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600"
+    >
+      <div class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+        10K+
+      </div>
+      <div class="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+        全网 Stars
       </div>
     </div>
   </div>

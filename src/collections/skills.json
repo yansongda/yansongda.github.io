@@ -1,0 +1,55 @@
+[
+  {
+    "category": "语言",
+    "emoji": "💬",
+    "note": "吃饭的家伙，一个都不能少",
+    "skills": [
+      { "name": "PHP", "note": "十年老伙计，靠它吃饭" },
+      { "name": "Rust", "note": "新欢，正在热恋期，请勿打扰" },
+      { "name": "Python", "note": "写写脚本摸摸鱼" },
+      { "name": "JavaScript", "note": "前端半吊子必备" },
+      { "name": "TypeScript", "note": "给 JS 戴上安全帽" }
+    ]
+  },
+  {
+    "category": "框架",
+    "emoji": "🧱",
+    "note": "造轮子专业户",
+    "skills": [
+      { "name": "Hyperf", "note": "协程真香，性能拉满" },
+      { "name": "Salvo", "note": "Rust 界的颜值担当" },
+      { "name": "Laravel", "note": "PHP 里的老牌优雅" },
+      { "name": "Symfony", "note": "优雅但有点重" }
+    ]
+  },
+  {
+    "category": "数据与中间件",
+    "emoji": "🗄️",
+    "note": "数据猛男，掉坑无数",
+    "skills": [
+      { "name": "MySQL", "note": "老搭档" },
+      { "name": "MongoDB", "note": "自建过集群，掉过坑" },
+      { "name": "Redis", "note": "缓存届顶流" },
+      { "name": "Elasticsearch", "note": "搜啥都快" }
+    ]
+  },
+  {
+    "category": "运维与部署",
+    "emoji": "🚀",
+    "note": "一把梭，全都要",
+    "skills": [
+      { "name": "Docker", "note": "打包狂魔，万物皆可容器" },
+      { "name": "Nginx", "note": "反向代理一把好手" },
+      { "name": "Linux", "note": "服务器上的第二个家" }
+    ]
+  },
+  {
+    "category": "正在深入",
+    "emoji": "🦀",
+    "note": "头铁勇士，越陷越深",
+    "wide": true,
+    "skills": [
+      { "name": "Rust", "note": "学 Rust，掉头发，涨工资（大概）" }
+    ]
+  }
+]

@@ -4,18 +4,25 @@ import Layout from "@layouts/post.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
+  const sorted = [...posts].sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+  );
 
-  return posts.map((post) => ({
+  return sorted.map((post, index) => ({
     params: { id: post.id },
-    props: { post },
+    props: {
+      post,
+      prev: sorted[index - 1] ?? null,
+      next: sorted[index + 1] ?? null,
+    },
   }));
 }
 
-const { post } = Astro.props;
-const { Content } = await render(post);
+const { post, prev, next } = Astro.props;
+const { Content, headings } = await render(post);
 const frontmatter = post.data;
 ---
 
-<Layout frontmatter={frontmatter}>
+<Layout frontmatter={frontmatter} prev={prev} next={next} headings={headings}>
   <Content />
 </Layout>
